@@ -42,18 +42,19 @@ h3{
 	background-color: rgba(169, 245, 225, 0.5);
 	border-radius: 10px;
 }
-p{
-	width: 480px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	float: left;
-}
+
 input{
 	border-radius: 5px;
 	border: 1px solid #ffdd57;
 	height: 30px;
 }
-
+label{
+	width: 150px;
+}
+#formData div{
+	float: left;
+	margin: 20px;
+}
 #holidays{
 	width: 960px;
 	display: inline-block;
@@ -79,7 +80,7 @@ input{
 .draggable img{
 	border: 1px solid #ffdd57;
 }
-.droppable {
+#droppable {
 	width: 960px;
 	height: 250px;
 	display: inline-block;
@@ -99,4 +100,8 @@ h2{
 }
 img{
 	margin-bottom: 5px;
+}
+
+button {
+	margin: 20px 0px;
 }

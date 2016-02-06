@@ -17,33 +17,48 @@
 			<h1>DreamTravel</h1>
 		</div>
 		<div class="content">
-			<h3>Pick dates for your vacation:</h3>
+			<h3>Booking information</h3>
 			<div id="formData">
-				<form action="">
-					<div>
+				<form action="#">
+					<div class="form-group">
 						<label for="fromDate">From date:</label>
 						<input type="text" class="datepicker" id="fromDate" placeholder="Click to open calendar">
 					</div>
-					<div>
+					<div class="form-group">
 						<label for="toDate">To date:</label>
 						<input type="text" class="datepicker" id="toDate" placeholder="Click to open calendar">
 					</div>
-					<div>
-						<label for="firstName">First name</label>
+					<div class="form-group">
+						<label for="firstName">First name:</label>
 						<input type="text" class="firstName" id="firstName" placeholder="First Name">
 					</div>
-					<div>
-						<label for="lastName">Last name</label>
+					<div class="form-group">
+						<label for="lastName">Last name:</label>
 						<input type="text" class="lastName" id="lastName" placeholder="Last Name">
 					</div>
-					<div>
+					<div class="form-group">
+						<label for="country">Country:</label>
+						<input type="text" id="country" placeholder="Country"/>
+					</div>
+					<div class="form-group">
+						<label for="address">Address:</label>
+						<input type="text" id="address" placeholder="Address"/>
+					</div>
+					<div class="form-group">
+						<label for="phone">Phone number:</label>
+						<input type="text"  id="phone" placeholder="Phone number"/>
+					</div >
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" id="email" placeholder="Email"/>
+					</div>
+					<div class="form-group">
 						<label for="spinner">How many guests?</label>
   						<input id="spinner" name="value">	
 					</div>
-				</form>
 			</div>
-			<h3>Pick your destinations:</h3>
-			<div id="holidays">
+			<h3>Pick your destinations</h3>
+			<div id="holidays" class="form-group">
 				<div id="centeringDiv">
 					<div class="draggable">
 						<img src="images/vacation1.jpeg" alt="" />
@@ -87,12 +102,14 @@
 					</div>
 				</div>
 			</div>
-			<div id="drop">
+			<div id="drop" class="form-group">
 				<h2>Drop down here</h2>
 				<img src="images/arrow-small.png" alt="" />
 			</div>
-			<div class="droppable"></div>
+			<div class="form-group" id="droppable"></div>
+			<button>Book</button>
 		</div>
+	</form>
 	</div>
 </body>
 	<script type="text/javascript" src="js/jquery.js"></script>
@@ -102,7 +119,7 @@
 			 $( ".datepicker" ).datepicker();
 			    
 		 	 $( ".draggable" ).draggable();
-		 	 $( ".droppable" ).droppable({
+		 	 $( "#droppable" ).droppable({
 		 	 	drop: function( event, ui ) {
 		 	        $( this )
 		 	          .addClass( "ui-state-highlight" )
@@ -113,6 +130,7 @@
 		 	  .selectmenu('option','font-size:20px');
 		 	  
 		 	 $( "#spinner" ).spinner();
+		 	 $('button').button();
 	 	  });
 	</script>
 </html>
