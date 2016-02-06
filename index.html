@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Dream Holiday</title>
+	<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/jquery-ui.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.structure.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.theme.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="container">
+		<div id="header">
+			<img src="images/logo-small.png" alt="" />
+			<h1>DreamTravel</h1>
+		</div>
+		<div class="content">
+			<h3>Pick dates for your vacation:</h3>
+			<div id="formData">
+				<form action="">
+					<div>
+						<label for="fromDate">From date:</label>
+						<input type="text" class="datepicker" id="fromDate" placeholder="Click to open calendar">
+					</div>
+					<div>
+						<label for="toDate">To date:</label>
+						<input type="text" class="datepicker" id="toDate" placeholder="Click to open calendar">
+					</div>
+					<div>
+						<label for="firstName">First name</label>
+						<input type="text" class="firstName" id="firstName" placeholder="First Name">
+					</div>
+					<div>
+						<label for="lastName">Last name</label>
+						<input type="text" class="lastName" id="lastName" placeholder="Last Name">
+					</div>
+					<div>
+						<label for="spinner">How many guests?</label>
+  						<input id="spinner" name="value">	
+					</div>
+				</form>
+			</div>
+			<h3>Pick your destinations:</h3>
+			<div id="holidays">
+				<div id="centeringDiv">
+					<div class="draggable">
+						<img src="images/vacation1.jpeg" alt="" />
+						<div class="holidayInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem saepe. 
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi quis.</div>
+					</div>
+					<div class="draggable">
+						<img src="images/vacation2.jpeg" alt="" />
+						<div class="holidayInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt 
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla tempora.</div>
+					</div>
+					<div class="draggable">
+						<img src="images/vacation3.jpeg" alt="" />
+						<div class="holidayInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi nisi! 
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate ullam?</div>
+					</div>
+					<div class="draggable">
+						<img src="images/vacation4.jpeg" alt="" />
+						<div class="holidayInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi eligendi. 
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quae!</div>
+					</div>
+					<div class="draggable">
+						<img src="images/vacation5.jpeg" alt="" />
+						<div class="holidayInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis esse. 
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate reprehenderit!</div>
+					</div>
+					<div class="draggable">
+						<img src="images/vacation6.jpeg" alt="" />
+						<div class="holidayInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quam! 
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis porro.</div>
+					</div>
+					<div class="draggable">
+						<img src="images/vacation7.jpeg" alt="" />
+						<div class="holidayInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius distinctio? 
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore iure?</div>
+					</div>
+					<div class="draggable">
+						<img src="images/vacation8.jpeg" alt="" />
+						<div class="holidayInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit est. 
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis maiores.</div>
+					</div>
+				</div>
+			</div>
+			<div id="drop">
+				<h2>Drop down here</h2>
+				<img src="images/arrow-small.png" alt="" />
+			</div>
+			<div class="droppable"></div>
+		</div>
+	</div>
+</body>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+	 	 $(function() {
+			 $( ".datepicker" ).datepicker();
+			    
+		 	 $( ".draggable" ).draggable();
+		 	 $( ".droppable" ).droppable({
+		 	 	drop: function( event, ui ) {
+		 	        $( this )
+		 	          .addClass( "ui-state-highlight" )
+			     }
+		 	 });
+		 	  $( ".select" )
+		 	  .selectmenu()
+		 	  .selectmenu('option','font-size:20px');
+		 	  
+		 	 $( "#spinner" ).spinner();
+	 	  });
+	</script>
+</html>
