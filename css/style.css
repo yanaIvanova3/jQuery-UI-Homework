@@ -36,12 +36,7 @@ h3{
 	margin: 10px 0px;
 }
 
-#formData{
-	width:960px;
-	display: inline-block;
-	background-color: rgba(169, 245, 225, 0.5);
-	border-radius: 10px;
-}
+
 
 input{
 	border-radius: 5px;
@@ -60,48 +55,6 @@ label{
 	display: inline-block;
 	background-color: rgba(169, 245, 225, 0.5);
 	border-radius: 10px;
-	height: auto;
-}
-#centeringDiv{
-	display:inline-block;
-	margin-top:50px;
-}
-.draggable {
-	float: left;
-	width: 240px;
-	height: 300px;
+	height: 600px;
 }
 
-.holidayInfo{
-	width: 200px;
-	margin-left: 20px;
-}
-
-.draggable img{
-	border: 1px solid #ffdd57;
-}
-#droppable {
-	width: 960px;
-	height: 250px;
-	display: inline-block;
-	background-color: rgba(169, 245, 225, 0.5);
-	border-radius: 10px;
-}
-#drop {
-	display: inline-block;
-	background-color: rgba(250, 204, 46, 0.3);
-	border-radius: 10px;
-	width: 960px;
-	margin: 10px 0px;
-}
-h2{
-	font-size: 25px;
-	line-height: 40px;
-}
-img{
-	margin-bottom: 5px;
-}
-
-button {
-	margin: 20px 0px;
-}

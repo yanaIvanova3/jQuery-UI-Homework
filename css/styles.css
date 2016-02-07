@@ -1,0 +1,88 @@
+body {
+  background-image: url("../images/ocean.jpeg");
+  font-family: 'Lobster', cursive; }
+
+.container {
+  width: 960px;
+  height: auto;
+  margin: 0 auto; }
+
+#header {
+  width: 100%;
+  text-align: left;
+  color: #ffdd57;
+  padding-top: 20px;
+  margin-bottom: 20px; }
+
+#header img, h1 {
+  margin-left: 100px; }
+
+.content {
+  text-align: center;
+  color: #4c3000; }
+
+h3, #drop {
+  font-size: 25px;
+  line-height: 40px;
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(250, 204, 46, 0.3);
+  border-radius: 10px;
+  margin: 10px 0px; }
+
+input {
+  border-radius: 5px;
+  border: 1px solid #ffdd57;
+  height: 30px; }
+
+.inputFields {
+  display: inline-block;
+  background-color: rgba(169, 245, 225, 0.5);
+  border-radius: 10px; }
+
+.inputFields div {
+  float: left;
+  margin: 20px; }
+
+#holidays {
+  width: 960px;
+  display: inline-block;
+  background-color: rgba(169, 245, 225, 0.5);
+  border-radius: 10px;
+  height: auto; }
+
+.draggable {
+  float: left;
+  width: 240px;
+  height: 300px; }
+
+#centeringDiv {
+  display: inline-block;
+  margin-top: 50px; }
+
+.holidayInfo {
+  width: 200px;
+  margin-left: 20px; }
+
+.draggable img {
+  border: 2px solid #ffdd57; }
+
+#droppable {
+  width: 960px;
+  height: 250px;
+  display: inline-block;
+  background-color: rgba(169, 245, 225, 0.5);
+  border-radius: 10px; }
+
+#book {
+  line-height: 40px;
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(250, 204, 46, 0.3);
+  border-radius: 10px;
+  margin: 10px 0px; }
+
+button {
+  margin: 20px 0px; }
+
+/*# sourceMappingURL=styles.css.map */
