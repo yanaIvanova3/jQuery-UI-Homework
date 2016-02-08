@@ -5,18 +5,18 @@ $border-radius: 10px;
 $content-width: 960px;
 
 
-body{
+body {
 	background-image: url('../images/ocean.jpeg');
 	font-family: 'Lobster', cursive;
 }
 
-.container{
+.container {
 	width: $content-width;
 	height: auto;
 	margin: 0 auto;
 }
 
-#header{
+#header {
 	width: 100%;
 	text-align: left;
 	color: #ffdd57;
@@ -24,16 +24,16 @@ body{
 	margin-bottom: 20px;
 }
 
-#header img, h1{
+#header img, h1 {
 	margin-left: 100px;
 }
 
-.content{
+.content {
 	text-align: center;
 	color: $text-color ;
 }
 
-h3, #drop{
+h3, #drop {
 	font-size: 25px;
 	line-height: 40px;
 	display: inline-block;
@@ -43,7 +43,7 @@ h3, #drop{
 	margin: 10px 0px;
 }
 
-input{
+input {
 	border-radius: 5px;
 	border: 1px solid #ffdd57;
 	height: 30px;
@@ -55,12 +55,12 @@ input{
 	border-radius: $border-radius;
 }
 
-.inputFields div{
+.inputFields div {
 	float: left;
 	margin: 20px;
 }
 
-#holidays{
+#holidays {
 	width: $content-width;
 	display: inline-block;
 	background-color: $content-fields-color;
@@ -73,17 +73,17 @@ input{
 	width: 240px;
 	height: 300px;
 }
-#centeringDiv{
+#centeringDiv {
 	display:inline-block;
 	margin-top: 50px;
 }
 
-.holidayInfo{
+.holidayInfo {
 	width: 200px;
 	margin-left: 20px;
 }
 
-.draggable img{
+.draggable img {
 	border: 2px solid #ffdd57;
 }
 
@@ -103,6 +103,15 @@ input{
 	margin: 10px 0px;
 }
 
-button{
+button {
 	margin: 20px 0px;
+}
+
+#modal {
+	display: none;
+}
+#modal-text { 
+	font-size: 40px;
+	font-family: 'Lobster', cursive;
+	line-height: 80px;
 }

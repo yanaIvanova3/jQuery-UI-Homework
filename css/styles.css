@@ -85,4 +85,12 @@ input {
 button {
   margin: 20px 0px; }
 
+#modal {
+  display: none; }
+
+#modal-text {
+  font-size: 40px;
+  font-family: 'Lobster', cursive;
+  line-height: 80px; }
+
 /*# sourceMappingURL=styles.css.map */
