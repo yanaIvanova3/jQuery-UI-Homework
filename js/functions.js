@@ -57,8 +57,8 @@ function checkDays() {
 		return false;
 	}
 	
-	if (daysDiff != 3) {
-		errors.push('You should select exactly 3 days for your vacation');
+	if (daysDiff != 7) {
+		errors.push('You should select exactly 7 days for your vacation');
 		$('.datepicker').css('border', '1px groove red');
 		return false;
 	} else {
@@ -92,5 +92,12 @@ function checkDestinationsCount(counter) {
 		}
 }
 
-
+function smallerView() {
+	var dropped = $('.dropped').val();
+	
+	dropped.css({
+		'width' : '100px',
+		'height' : '100px'
+			})
+}
 

@@ -93,4 +93,9 @@ button {
   font-family: 'Lobster', cursive;
   line-height: 80px; }
 
+form p {
+  float: left;
+  margin-left: 40%;
+  font-style: italic; }
+
 /*# sourceMappingURL=styles.css.map */

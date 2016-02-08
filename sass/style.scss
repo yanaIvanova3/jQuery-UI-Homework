@@ -94,6 +94,7 @@ input {
 	background-color: $content-fields-color;
 	border-radius: $border-radius;
 }
+
 #book {
 	line-height: 40px;
 	display: inline-block;
@@ -114,4 +115,10 @@ button {
 	font-size: 40px;
 	font-family: 'Lobster', cursive;
 	line-height: 80px;
+}
+
+form p {
+float: left;
+margin-left: 40%;
+font-style : italic;
 }
